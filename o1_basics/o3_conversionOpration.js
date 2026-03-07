@@ -22,3 +22,5 @@
 let someNunber= 33;
 let stringNumber=String(someNunber);
 console.log(typeof stringNumber);
+let a="Muskan";
+git
