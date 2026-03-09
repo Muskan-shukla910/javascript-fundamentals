@@ -23,4 +23,16 @@ let someNunber= 33;
 let stringNumber=String(someNunber);
 console.log(typeof stringNumber);
 let a="Muskan";
-git
+  ///////// Oparations ////////////
+  let value =3;
+  let negVlaue= -value;
+  console.log(negVlaue);
+
+  console.log("1"+2);
+  console.log("1"+2+2);
+  console.log(1+2+"3");
+  let c="1"+2;
+  let b=1+"2";
+  // console.log(c+b);
+  console.log("hello");
+  
