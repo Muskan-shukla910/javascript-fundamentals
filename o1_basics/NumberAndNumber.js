@@ -18,3 +18,33 @@ console.log(typeof score);
 const balance =new Number(100);
 console.log(balance.toString().length);
 console.log(balance.toFixed(2));
+console.log(balance.toFixed(1));
+const num=186.699;
+console.log(typeof num.toFixed(2));
+console.log(num.toPrecision(4));
+console.log(num.toString());
+
+
+// we cannot compare Objects Directly 
+let a=new Number(20);
+let b=new Number(20);
+console.log(a==b);
+// let b=20;
+console.log(typeof b);
+let obj1={
+    name:"Rohit",
+
+}
+let obj2=obj1;
+
+obj2={
+    name:"Rohit",
+}
+// Why? Objects reference se compare hote hain, value se nahi!
+// a aur b memory mein alag jagah store hain!
+
+
+//non Primitive  always compare with refernce 
+console.log(obj1==obj2);
+
+
