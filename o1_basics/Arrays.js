@@ -34,3 +34,5 @@ console.log(arr3)
 arr1.splice(1, 2)    // removes 2 items from index 1 — modifies original!
 
 console.log(arr1);
+
+
