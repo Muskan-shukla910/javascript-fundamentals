@@ -16,6 +16,16 @@ function random(){
 }
 let n=1204;
 
-const now=new Date();
-// console.log(now.getDay());
-console.log(now.getDate());                                                                    
+// const now=new Date();
+// // console.log(now.getDay());
+// console.log(now.getDate());   
+// console.log(now.getDay());                                                                 
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+
+const now=Date.now();
+console.log(now);
+// const dates=new Date(1773241091681);
+const dates=new Date(0);
+
+console.log(dates.toString());
