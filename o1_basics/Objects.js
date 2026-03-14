@@ -3,6 +3,8 @@
 
 // const { use } = require("react");
 
+// const { use } = require("react");
+
 const user={
     name:"Rohit",
     age:20,
@@ -42,3 +44,7 @@ console.log(Object.entries(user));
 for(let keys in user){
     console.log(keys,user[keys]);
 }
+
+const name=user.name;
+const age=user.age;
+console.log(name,age);
