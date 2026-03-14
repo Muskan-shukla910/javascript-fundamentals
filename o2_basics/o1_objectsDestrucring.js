@@ -3,12 +3,7 @@
 // const { use } = require("react");
 
 // Object destructing
-const user={
-    name:"Muskan",
-    age:22,
-    course:"BCA",
-    id:123
-}
+
 
 // destrucring
 
@@ -27,8 +22,8 @@ const [first,secound,third]=arr;
 console.log(first,secound,third);
 
 // update using destrucring
-const {name:userName,age:userAge,course}=user;
-console.log(userName,userAge,course);
+// const {name:userName,age:userAge,course}=user;
+// console.log(userName,userAge,course);
 
 // For of loop 
 
@@ -36,6 +31,35 @@ console.log(userName,userAge,course);
     // console.log(keys);
 // }
 
-for(let keyVaues of Object.entries(user)){
-    console.log(keyVaues);
+// for(let keyVaues of Object.entries(user)){
+//     console.log(keyVaues);
+// }
+
+
+// Symbol
+
+const mySym=Symbol("key1");
+
+const user={
+    name:"Muskan",
+    age:22,
+     [mySym]:"myKey1",
+    course:"BCA",
+    id:123
+   
 }
+
+
+console.log(typeof user[mySym]);
+
+user.greeting=function(){
+    console.log("Hello JS User");
+}
+console.log(user.greeting());
+
+
+user.greetingTwo=function(){
+    console.log(`Hello JS User ,${this.name}`);
+}
+
+console.log(user.greetingTwo());
