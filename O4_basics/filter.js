@@ -29,3 +29,20 @@ arr.filtering=function (compare){
 
 const newArr=arr.filtering((num)=>num>25);
 console.log(newArr);
+
+
+
+
+const products = [
+  { name: 'Laptop', onSale: false },
+  { name: 'Headphones', onSale: true },
+  { name: 'Mouse', onSale: true },
+  { name: 'Monitor', onSale: false }
+];
+
+// We only want products where onSale is true
+const salesItems = products.filter(product => product.name =="Laptop");
+
+console.log(salesItems); 
+// Output: [{ name: 'Headphones', onSale: true }, { name: 'Mouse', onSale: true }]
+
