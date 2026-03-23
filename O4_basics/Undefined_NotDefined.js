@@ -15,8 +15,6 @@ else{
 
 
 // js is loosly type languange
-
-
 var a=10;
 console.log(a);
 
