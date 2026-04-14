@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div id="myBtn">Click me</div>
+        <div class="rectangle"></div>
+
+    </section>
+
+    <script>
+        let btn = document.querySelector("#myBtn");
+        let recDiv = document.querySelector(".rectangle");
+        const handleMouseEvents = () => {
+            console.log("click");
+            recDiv.style.backgroundColor = "#f5ee62";
+        }
+
+        const handleMouseEvents2 = () => {
+            console.log("dblclick");
+        }
+    
+        document.getElementById("myBtn").addEventListener("click",(e)=>{
+            let a=e.target;
+            console.log(a);
+        })
+    </script>
+</body>
+
+</html>
