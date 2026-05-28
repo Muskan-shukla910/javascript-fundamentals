@@ -1,0 +1,6 @@
+How to add event Listner
+Select the paragraph first 
+
+element.addEventListener("event name", function(){
+    Here write your code baswe that you want to right actually here 
+})

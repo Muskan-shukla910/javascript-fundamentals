@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Toggle a class active on a button when clicked (Hint :use ClassList.toggle()) -->
+     <button>CLick me </button>
+    <script>
+        let button=document.querySelector("button");
+        button.addEventListener("click",()=>{
+            console.log("Button was clicked");
+            button.style.color="red";
+            button.innerText="button was clicked sucessfully color is red ";
+            
+        });
+    </script>
+</body>
+</html>

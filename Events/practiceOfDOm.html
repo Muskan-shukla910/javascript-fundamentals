@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .highlite{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <!-- <p>Hey I am muskan </p>
+    <p>You are looking gorgoes</p>
+    <p>Lokks stunning</p>
+    <p>This is menance news for me I am scaring now yrr</p> -->
+
+    <ul>
+        <li>Apple </li>
+        <li>banana</li>
+        <li>Grapes</li>
+        <li>Apple </li>
+        <li>banana</li>
+        <li>Grapes</li>
+        <li>Apple </li>
+        <li>banana</li>
+        <li>Grapes</li>
+    </ul>
+    <script>
+        let li=document.querySelectorAll("ul li:nth-child(2n)");
+        console.log(li);
+        
+        li.forEach(function (elem){
+            elem.classList.add("highlite");
+        })
+        // let p = document.querySelectorAll("p");
+        // console.log(p);
+        // p.forEach(function (el, idx) {
+        //     el.style.fontSize = "19px";
+        //     el.style.color = "red"
+
+
+        // })
+
+        // difrence beyween innerText,innerHtml,textContent
+
+
+        // textContent fast hota comparatibly to innerText
+        // InnerHtml actyuall me hhume bahi html show kr deta hai
+
+
+        // classlist vs style property
+        // classlist is better then style property always use classlist to piut styling
+
+    </script>
+</body>
+
+</html>

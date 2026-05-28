@@ -9,7 +9,7 @@
 
 <body>
     <section>
-        <div id="myBtn">Click me</div>
+        <button id="myBtn">Click me</button>
         <div class="rectangle"></div>
 
     </section>
@@ -26,10 +26,16 @@
             console.log("dblclick");
         }
     
-        document.getElementById("myBtn").addEventListener("click",(e)=>{
-            let a=e.target;
-            console.log(a);
+        // document.getElementById("myBtn").addEventListener("click",(e)=>{
+        //     let a=e.target;
+        //     console.log(a);
+        // });
+
+        btn.addEventListener("click",(e)=>{
+            handleMouseEvents(e.target);
         })
+        btn.addEventListener("click",handleMouseEvents);
+    
     </script>
 </body>
 
