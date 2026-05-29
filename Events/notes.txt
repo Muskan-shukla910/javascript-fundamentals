@@ -4,3 +4,14 @@ Select the paragraph first
 element.addEventListener("event name", function(){
     Here write your code baswe that you want to right actually here 
 })
+
+
+jb bhi app click krte ho ya koi bhi event raise krte ho to aapka jo event flow hai bo do phase me chalta hai 
+
+pahse 1:  element top levek element se neeche  ki taraf aayega 
+
+pahse 2: event raised element se parent ki taraf jayega 
+ aur phase 1 pahle hoti hai     
+
+ most important concept in this that is event propogation 
+ 

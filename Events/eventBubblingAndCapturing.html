@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 180px;
+            width: 180px;
+            background-color: yellow;
+        }
+        .b{
+            height: 160px;
+            width: 160px;
+            background-color: red;
+        }
+        .c{
+            height: 140px;
+            width: 140px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>Click me !</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let a=document.querySelector(".a");
+        let b=document.querySelector(".b");
+        let c=document.querySelector(".c");
+        let btn=document.querySelector("button");
+
+        btn.addEventListener("click",function(){
+            console.log("button was clicked !");
+            
+        });
+        a.addEventListener("click",function(){
+            console.log("a clicked");
+        });
+        b.addEventListener("click",function(){
+            console.log("b clicked");
+        });
+
+        // capturing phase
+        c.addEventListener("click",function(){
+            console.log("c clicked");
+        },true);
+
+    </script>
+</body>
+</html>
