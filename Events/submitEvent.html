@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input{
+            display: block;
+            padding: 10px;
+            margin: 10px 3px ;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #main{
+            height: 100%; width: 100%;
+            background-color: #222;
+            padding: 22px;
+        }
+        .card{
+            max-width: 300px;
+            color:#fff;
+            margin-top: 40px;
+            border: 2px solid #e3e3e3;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .profile{
+            width: 40px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            overflow: hidden;
+
+            >img{
+                height: 50px;
+                width: 40px;
+                object-fit: cover;
+
+            }
+        }
+        .card h5{
+            margin-top: 5px;
+        }
+        .card p{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div id="main">
+        <form action="">
+        <input type="text"  placeholder="profile pic">
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="occupation">
+        <input type="text" placeholder="info">
+        <input type="submit">
+    </form>
+    <!-- <div class="card">
+        <div class="profile">
+            <img src="SSOC.jpeg" alt="profile img">
+        </div>
+        <h3>Muskan Shukla</h3>
+        <h5>Increadible Coder</h5>
+        <p>I am muskan shukla. pursuing my bca fro university Of lucknow. And curreltly making a project</p>
+    </div>
+    </div> -->
     <script src="script.js"></script>
 </body>
 </html>
