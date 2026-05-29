@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #999;
+        }
+        input{
+            display: none;
+        }
+        #btn{
+            padding: 12px 22px;
+            background-color:rgb(80, 244, 80);
+            color: white;
+            font-weight: 30px;
+            border-radius: 10px;
+        }
+        #btn:hover{
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <!-- <div id="main">
+        <h1>A</h1>
+    </div>
     <h2>Select Your device</h2>
     <select name="names" id="">
         <option selected disabled>Choose Your device</option>
@@ -14,7 +50,13 @@
         <option value="I Phone">I Phone</option>
         <option value="Hp">Hp</option>
         <option value="Motorola">Motorola</option>
-    </select>
+    </select> -->
+
+    <div id="main">
+        <input type="file">
+        <div id="btn">Upload Files</div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
