@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -31,12 +29,15 @@
     Nesciunt eligendi dolore quas quia consequuntur architecto praesentium, quos cumque aut voluptates! Reiciendis commodi delectus atque ut a quisquam! Quidem sed omnis consectetur ullam veritatis atque ea eaque animi quasi.</p>
     <script>
         let para=document.querySelector("p");
-        para.addEventListener("click",()=>{
+        function dblclick(){
             para.style.color="green";
-        });
-        para.removeEventListener("click",function(){
-            console.log("removed successfully");
-        });
+            console.log("Button clicked successfully");
+            
+        };
+
+        // Why dblclick is not working properly 
+        para.addEventListener("dblclick",dblclick);
+        // para.removeEventListener("click",dblclick);
     </script>
 </body>
 </html>
