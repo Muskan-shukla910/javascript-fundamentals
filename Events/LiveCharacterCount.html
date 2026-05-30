@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Write anything">
+    <h1>Total Character : <span>0</span></h1>
+    <script>
+        let inp=document.querySelector("input");
+        let span=document.querySelector("span");
+        inp.addEventListener("input",function(){
+            // console.log("input hua ");
+        //    span.textContent= inp.value.length;
+        let left=20-inp.value.length;
+            span.textContent=left;
+
+        if(left<0){
+            span.style.color="red";
+        }
+        else{
+            span.style.color="white";
+        }
+        })
+       
+    </script>
+</body>
+</html>
