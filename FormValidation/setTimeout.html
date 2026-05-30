@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: black; */
+        }
+        .glass-card{
+
+            height: 100px;
+            width: 200px;
+            margin: 100px auto;
+            /* border: 2px solid black; */
+            box-shadow: 10px 10px 10px  rgb(192, 190, 190);
+
+        }
+
+        h2{
+            margin-top: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            font-size: 18px;
+            text-align: center;
+            /* color: white; */
+        }
+        .progress-bar{
+            height: 100%;
+            width: 0%;
+            background: rgba(red, green, blue, 0.9);
+            transition: width 0.3s, ease;
+        }
+        .percent{
+            font-size: 16px;
+            font-weight: 500px;
+            color: #d1d1d1;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-card">
+        <h2>Downloading ............</h2>
+
+        <div class="progress-counter">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="percent" id="percentText">0%</div>
+    </div>
+
+    <script>
+        console.log("Hello");
+        let count=10;
+       let interval= setInterval(() =>{
+        if(count>=0){
+            console.log(count);
+            count--;
+        }
+        else{
+            clearInterval(interval)
+        }
+        },1000);
+    </script>
+</body>
+</html>

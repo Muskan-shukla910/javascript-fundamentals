@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        small {
+            color: red;
+            font-size: 12px;
+        }
+
+        #hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="name" id="name" required minlength="3" maxlength="10">
+       
+        <div id="hide">
+             <br><small>Your name must be greater then 3</small></div>
+        <br>
+        <br>
+        <input type="email" placeholder="email" id="email" required>
+        <br>
+        <br>
+        <input type="password" placeholder="password" id="pass" required>
+        <br>
+    <br>
+    <select>
+        <option value="male">male</option>
+        <option value="Female">Female</option>
+        <option value="others">Others</option>
+
+    </select>
+    <br> <br>
+    <textarea placeholder="Tell Us about you"></textarea>
+    <br><br>
+    <input type="submit">
+    </form>
+    
+
+    <script>
+        let name = document.querySelector("#name");
+        let email = document.querySelector("#email");
+        let password = document.querySelector("#pass");
+        let form = document.querySelector("form");
+        // let small = document.querySelector("small");
+        let hide=document.querySelector("#hide");
+        // form.addEventListener("submit", function (dets) {
+        //     dets.preventDefault();
+        //     console.log(name.value.length);
+            
+        //     if (name.value.length <= 3) {
+        //         hide.style.display ="initial";
+        //     }
+        //     else {
+        //         //small.textContent="inavlid name, name must be contain three characters !";
+        //         hide.style.display = "none";
+        //     }
+        // });
+
+
+        // regixx
+        // these are the already defined logics that are already written n the internet
+        form.addEventListener("submit",function(){
+
+        });
+    </script>
+</body>
+
+</html>
