@@ -14,3 +14,28 @@ function abcd(){
 
 
 // .js lexical scoping and dynmically scoping 
+
+// lexiacal scoping => kaha pr aap physically availble ho ye poori tarhh  depend krta hai ki aap kya acess kr paoge 
+function abcd(){
+    let a=12;
+    function dfg(){
+        console.log(a);
+        
+    }
+}
+
+// dynmically scoping  => kaha se call kr rhe ho uspe depend krta hai kya value milegi 
+
+// javascript hamari lexiaclly scoped hai 
+
+let a=12;
+function abcd(){
+    console.log(a);
+}
+function efg(){
+    let a=12;
+    abcd();
+}
+
+efg();
+
