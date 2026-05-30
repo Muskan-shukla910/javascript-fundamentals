@@ -6,7 +6,7 @@ let heading1=document.querySelector("h1");
 
 // Inner HTml se hum tag ke andr html likh sakte hai bakki innerText,InnerContext Text ko change krne ke liye use hote hai
 
-heading1.innerHTML="<i>hey , This is muskan</i>"
+heading1.innerHTML="<i>hey , This is muskan</i>";
 console.dir(heading1);
 heading1.hidden=false;
 
@@ -16,7 +16,7 @@ let a =document.querySelector("a");
 // set atribute
 // a.setAttribute("href","https://www.google.com");
 // console.log(a.getAttribute("href"));
-a.removeAttribute("href")
+a.removeAttribute("href");
 let a1=document.getElementsByClassName("abcd");
 console.log(a1);
 let img1=document.querySelector("img");
