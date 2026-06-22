@@ -54,3 +54,4 @@ img.getAttribute("src");
 // What does setAtribute do 
 
 // ADD a title  attributes to a div dynmically  
+

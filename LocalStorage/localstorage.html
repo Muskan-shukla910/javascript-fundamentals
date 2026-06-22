@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        // localStorage.setItem("name","harsh");
+       let val= localStorage.getItem(name);
+       console.log(val);
+       localStorage.setItem("name","harshita");
+
+    //    session storage
+
+    // cokkies
+    // confusing topic
+    // cookies-to store small data packets b=we use session for this atleast 4kb 
+    // localstorage and session storage me nearly-5mb store hota hai 
+    // localStorage.setItem("muskan",["atul","arpit","Shubham"]);
+    // localStorage.setItem("friend" ,{one:"akash",two:"sumit"});
+
+    localStorage.setItem("friends",JSON.stringify(["akash","harsh","Om"]));
+  let fr=  JSON.parse(localStorage.getItem("friends"));
+  console.log(fr);
+    </script>
+</body>
+</html>

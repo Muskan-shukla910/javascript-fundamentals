@@ -27,3 +27,20 @@ if (Object.keys(emptyObhj).length==0) {
 // false==0  , true
 // false=="", true
 // 0=='' true
+
+// ye tab use hota hai like jb hum database se backend me data maga rhe hote hai us time suppose ngi mil pa rha hai dta tb ya toh null ata hai ya undefined
+// Nullish coaleshing Oprator (??):null  And Undefined
+let val1;
+// val1=null ?? undefined;
+// val1=5 ?? 10;
+// val1=undefined ?? 15
+val1=null ?? 30 ?? 20;
+console.log(val1);
+
+// Ternary oparator 
+// condition?true :false
+const icePrice=100;
+icePrice >=80 ? console.log("less then 80"):console.log("More then 80");
+
+if(icePrice>10) console.log("yes this is my implicit Scope");
+ 

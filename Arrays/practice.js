@@ -69,3 +69,4 @@ console.log(c);
 let countries=["USA","Japan"];
 countries=["india",...countries];
 console.log(countries);
+

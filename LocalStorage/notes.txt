@@ -1,0 +1,28 @@
+local storage:- aapke browser me data store krna jo ki browser band hone pr bhi delte nhi hota 
+
+sesion storage:- ye aapka data temporarly store krta haii mtlb ki tab bnd hua and data gyaa 
+
+cookies:- ye bhi aapak data store krta hai and aapka data browser ki cookies name ki property mai save hota hai ye cookie concept kam data ya lite data ke liye hota hai 
+
+
+
+
+localStoarge:- how to store data  -setItem
+               how to fetch data -getItem
+               hhow to remove data - removeItem
+               how to update data -
+ localStoarge only stores strings 
+
+
+
+cookies stores small data (4 kb)
+on other hand sessipn storage stores (5 Mb)
+
+
+cookies me jo bhi data stpre kroge bo data page reload pr automatic server pr jayegaaa 
+
+
+localStoarge me array store nhi kr sakte thats why hum use string me banakr store krte hai and get krte hai then bo string me milta hai 
+
+
+use uski original form me laane ke liye mai JSON.parse ka use krte hai 
